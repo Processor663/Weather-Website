@@ -116,7 +116,8 @@ main section .sectionContainer .textContainer .svg{
 .section_two .card{
    text-align: center;
    box-shadow: 1px 1px 18px var(--darkBlue);
-   border: none;
+   -webkit-box-shadow: 1px 1px 18px var(--darkBlue);
+    -moz-box-shadow: 1px 1px 18px var(--darkBlue);
    padding-top: 1em;
    color: var(--darkBlue);
 }
@@ -192,10 +193,15 @@ main section .sectionContainer .textContainer .svg{
     width: 8rem;
     height: 8rem;
     border-radius: 50%;
+    border: 1px dashed var(--darkBlue);
     outline: 2px solid var(--darkBlue);
     outline-offset: 10px;
     outline-style: dashed;
     box-shadow: 1px 1px 6px black;
+    -webkit-box-shadow: 1px 1px 6px black;
+    -moz-box-shadow: 1px 1px 6px black;
+
+
 }
 
 

@@ -126,14 +126,14 @@ class Container2 {
                 setTimeout(function(){
                 $(loaderContainer).hide();
 
-                },3000)
+                },4000)
             
             }else {
                 setTimeout(function(){
                     $(loaderContainer).hide();
                     containerAll.innerHTML = error;
     
-                    },3000)
+                    },4000)
             }
         });
 

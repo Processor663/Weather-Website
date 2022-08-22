@@ -135,8 +135,8 @@ class Container {
                 e.preventDefault();
                 return;
 
-            }else if(nameInput.value.length > 23){
-                alert("maximum name input is 23");
+            }else if(nameInput.value.length > 18){
+                alert("maximum name input is 18");
                 e.preventDefault();
 
             }else{
