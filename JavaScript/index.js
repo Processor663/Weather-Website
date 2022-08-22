@@ -143,6 +143,7 @@ class Container {
                
                 // To store name and city of user in the local storage
                 self.localStore();
+                $('.modalOne').modal('hide'); //hiding modal in bootstrap
 
                 // To clear input field
                         cityInput.value=""
