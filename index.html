@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./CSS/index.css">
+    <title>AMC Web Application</title>
+    <link rel="icon" type="image/x-icon" href="./images/cloud.png">
+</head>
+<body>
+
+    <header class="sticky-top pt-5 pb-3">
+        <div class="container">
+            <h2><span class="spanHeader">AMC</span> WEATHER APP</h2>
+
+        </div>
+    </header>
+  <main>
+<!-- <==================================BEGINNING OF SECTION ONE=====================================> -->
+
+    <section class="section_one">
+
+            <div class="sectionContainer">
+                 <div class=" textContainer container">
+                    <div class="divText">
+                        <h2 >
+                          <span class="typed"></span>
+                        </h2>
+                        <p>Get to know your Weather maps and radar precipitation forecast</p>
+                        <button type="button" class="btn btn-lg" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Get Started</button>
+
+                    </div>
+                    <div class="divSvg">
+                       <img class="svg" src="./images/header-image.svg" alt="img">
+                    </div>
+
+                 </div>
+            </div>
+
+
+  <!-- <==================================MODALS=====================================> -->
+
+          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Kindly Fill in the Form Below.</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="form-group">
+                      <label for="recipient-name" class="col-form-label">Your Name:</label>
+                      <input type="text" class="form-control nameInput" id="recipient-name" >
+                    </div>
+                    <div class="form-group">
+                      <label for="recipient-name" class="col-form-label">City:</label>
+                      <input type="text" class="form-control cityInput" id="recipient-name">
+                    </div>
+                    <div class="form-group">
+                      <label for="recipient-name" class="col-form-label">Country:</label>
+                      <input type="text" class="form-control countryInput" id="recipient-name">
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                  <button type="button" class="btn btn-primary continueButton"><a href="./weather.html" style="text-decoration:none; color:white">Continue</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+<!-- <==================================END OF MODALS=====================================> -->
+  
+    </section>
+
+<!-- <==================================END OF SECTION ONE=====================================> -->
+
+
+
+
+<!-- <==================================BEGINNIG OF SECTION TWO=====================================> -->
+
+        <section class="container section_two">
+            <h2 class="text-center heading"> Top Weather Forecasts</h2>
+            <div class="card-deck">
+                <div class="container">
+                    <div class="row" id="topWeather">
+                        <div class=" col-sm-6 col-lg-3 mb-4 mx-0">
+                            <div class="card mx-0 observer_two" generalObserver>
+                                <i class="fa fa-cloud"></i>
+                                <div class="card-body" id="london">
+                             
+                                </div>
+                              </div>
+                        </div>
+                        <div class=" col-sm-6 col-lg-3 mb-4 mx-0 ">
+                            <div class="card mx-0 observer_two "  generalObserver>
+                                <i class="fa fa-cloud"></i>
+                                <div class="card-body" id="lagos">
+                                
+                                </div>
+                              </div>
+                        </div>
+                        <div class=" col-sm-6 col-lg-3 mb-4 mx-0 " >
+                            <div class="card mx-0 observer_two" generalObserver >
+                                <i class="fa fa-cloud"></i>
+                                <div class="card-body" id="newyork">
+                                
+                                </div>
+                              </div>
+                        </div>
+                        <div class=" col-sm-6 col-lg-3 mx-0 ">
+                            <div class="card mx-0 observer_two" generalObserver>
+                                <i class="fa fa-cloud"></i>
+                                <div class="card-body" id="abuja">
+                              
+                                </div>
+                              </div>
+                        </div>
+                       
+                
+                    </div>
+                    
+                </div>
+
+              </div>
+
+        </section>
+
+<!-- <==================================END OF SECTION TWO=====================================> -->
+
+
+<!-- <==================================BEGINNING OF SECTION THREE=====================================> -->
+        <section class="section_three container">
+            <div class="divContainer">
+                <div class="observer_two" generalObserver>
+                    <img src="./images/forecast-2.svg" class="mb-5">
+                </div>
+                <div class="textContainer observer_two"  generalObserver>
+                    <h2 class="heading mb-3">How to use the AMC Weather App </h2>
+                    <p class="mb-5">Learn how to read Weather forecast easily.</p>
+                    <ul>
+                        <li class="mb-4">Click on the Get Started button to proceed.</li>
+                        <li class="mb-4">Fill in the form.</li>
+                        <li class="mb-4">The AMC Weather App will sync your location.</li>
+                        <li class="mb-4">kindly wait for some seconds, your weather forecast will be displayed.</li>
+                    </ul>
+                </div>
+            </div>
+
+        </section>
+
+<!-- <==================================END OF SECTION THREE=====================================> -->
+
+
+
+<!-- <==================================BEGINNING OF SECTION FOUR=====================================> -->
+
+        <section class="section_four">
+          <h2 class="heading text-center mb-5">Testimonials.</h2>
+            <div class="container divContainer">
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <div class="card">
+                            <img src="./images/Rectangle 3(1).png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">~Molly Reld</h5>
+                              <p class="card-text">AMC Weather App team is quick responsive incredibly kind and knowledgeable in their product. I could truly write pages on how valueable their customer support team is.</p>
+                              <p class="card-text"><small class="text-muted">Last updated 3 weeks ago</small></p>
+                            </div>
+                          </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="card">
+                            <img src="./images/Rectangle 3(5).png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">~John Doe</h5>
+                              <p class="card-text">AMC Weather App has blown me away! I have been dlighted at every turn since deciding to move over. Their customer teams are sensational and bring a powerful balance of humanness and expertise to every conversation. I have had thus far.</p>
+                              <p class="card-text"><small class="text-muted">Last updated 3 days ago</small></p>
+                            </div>
+                          </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="card">
+                            <img src="./images/Rectangle 3.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">~Peace Favour</h5>
+                              <p class="card-text">I love this web App because it's super fast, easy to use and access.</p>
+                              <p class="card-text"><small class="text-muted">Last updated 5 hours ago</small></p>
+                            </div>
+                          </div>
+                      </div>
+                    
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div> 
+            </div>
+        </section>
+
+<!-- <==================================END OF SECTION FOUR=====================================> -->
+    </main>
+
+
+
+
+
+    <footer>
+        <div class="container text-center">
+          <p>Built by Amadi Miracle Chibuike</p>
+          <p>Email: miracleama17@gmail.com</p>
+          <p>&copy; COPYRIGHT 2022 BY <span>AMC</span> Weather App </p>
+
+        </div>
+    </footer>
+ 
+
+    
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!-- <script src="./JavaScript/jquery-3.2.1.min.js"></script> -->
+    <!-- <script src="./JavaScript/jquery-3.6.0.min.js"></script> -->
+    <!-- <script src="./JavaScript/bootstrap.js"></script> -->
+    <script src="./typed.js/typed.js"></script>
+    <script src="./JavaScript/index.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+

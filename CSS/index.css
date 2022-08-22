@@ -1,0 +1,424 @@
+:root{
+    --darkBlue: rgb(1, 1, 63);
+    --height: 100vh;
+    --headingBig: 2.6rem ;
+    --headingSmall: 2rem ;
+
+}
+
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+/* heading that we we fit all desktop devices */
+.heading{
+    font-size: 2.6rem !important;
+    color: var(--darkBlue);
+  
+}
+
+
+
+header{
+    width: auto;
+}
+
+
+
+header h2{
+    color: var(--darkBlue);
+    font-size: 1.9em;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    
+
+}
+
+
+header h2 .spanHeader{
+    background-color: orangered;
+    border-radius: 5px 0px 5px 0px;
+    color:white;
+    padding: 0.1em 0.5em;
+}
+
+
+/* <================================BEGINNING OF SECTION ONE =====================================================> */
+
+main .section_one {
+    width: 100%;
+    margin-top: 4em;
+}
+
+main .section_one h2{
+    font-weight: bold;
+}
+
+main section .sectionContainer {
+    width: 100%;
+  
+}
+
+main section .sectionContainer .textContainer {
+    width: 100%;
+    color: var(--darkBlue);
+    display: flex;
+    align-items: center; 
+}
+
+main section .sectionContainer .textContainer h2{
+    font-size: 2.6rem;
+    margin-bottom: 0.5em; 
+}
+
+main section .sectionContainer .textContainer p{
+    font-size: 1.5rem;
+  
+}
+
+main section .sectionContainer .textContainer button{
+    background-color: var(--darkBlue);
+    color: white;
+    font-family:'Lucida Sans', 'Lucida Sans Regular','Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.8rem;
+    padding: 0.2em 2em;
+    margin: 2em 0em ;
+}
+
+main section .sectionContainer .textContainer .divText {
+    width: auto;
+    /* padding-left: 1.5em; */
+}
+
+main section .sectionContainer .textContainer .svg{
+    max-width: 100%;
+ 
+}
+
+/* <==================================END OF SECTION ONE=====================================>  */
+
+
+
+/* <================================BEGINNING OF SECTION TWO =====================================================> */
+
+.section_two h2{
+    margin-top:2em;
+    margin-bottom: 2em;
+
+}
+
+.section_two .card{
+   text-align: center;
+   box-shadow: 1px 1px 18px var(--darkBlue);
+   border: none;
+   padding-top: 1em;
+   color: var(--darkBlue);
+}
+
+.section_two .card i{
+    font-size: 5rem;
+ }
+
+/* <================================END OF SECTION TWO =====================================================> */
+
+
+
+
+/* <================================BEGINNING OF SECTION THREE =====================================================> */
+
+
+
+.section_three .divContainer {
+    display: flex;
+    margin-top: 7em;
+    margin-bottom: 5em;
+
+
+}
+
+.section_three .divContainer img {
+    max-width: 100%;
+}
+
+.section_three .divContainer h2 {
+    font-size: 2rem !important;
+    /* width: 100% !important; */
+
+}
+
+.section_three .divContainer ul,p{
+    font-size: 1.5rem;
+    color: var(--darkBlue);
+}
+
+.section_three .divContainer ul {
+    padding-left: 2.2em;
+
+}
+
+
+
+/* <================================END OF SECTION THREE =====================================================> */
+
+
+
+/* <================================BEGINNING OF SECTION FOUR =====================================================> */
+
+.section_four{
+    padding-top: 5em;
+    padding-bottom: 5em;
+    background-color: gainsboro;
+    margin-bottom: 5em;
+
+}
+
+.section_four .divContainer{
+    width: 50%;
+    
+}
+
+.section_four .divContainer .card p{
+    font-size: 1rem !important;
+}
+
+.section_four .divContainer .card img{
+    margin: 2em auto;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    outline: 2px solid var(--darkBlue);
+    outline-offset: 10px;
+    outline-style: dashed;
+    box-shadow: 1px 1px 6px black;
+}
+
+
+/* <================================END OF SECTION FOUR =====================================================> */
+
+
+
+
+/* <================================ FOOTER =====================================================> */
+footer p{
+    font-size: 1.2rem;
+
+}
+
+footer span {
+    background-color: orangered;
+    padding: 0.3em 0.6em;
+    color: white;
+    font-size: 1.2rem;
+
+
+}
+
+
+
+
+
+
+/* <================================END OF FOOTER =====================================================> */
+
+
+
+/* <================================SECOND PAGE =====================================================> */
+.tableContainer {
+    width: 50%;
+    margin: auto;
+
+}
+
+.tableContainer table{
+    width: 100%;
+   border: none;
+}
+
+.tableContainer td{
+    padding: 0.8em;
+    text-align: center;
+   border-left: 1px solid white;
+}
+
+.tableContainer td:first-of-type{   
+   border-left: none;
+}
+
+.loaderContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top:0px;
+    z-index: 1000;
+    width:100%;
+    height:100vh; 
+    background-color: white;
+}
+
+.containerSecond{
+    color:whitesmoke;
+    background-image: url(../images/pexels-lisa-fotios-1107717.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.containerSecond .overlay {
+    background-color: rgba(0, 0, 0, 0.678);
+    /* background-size: cover; */
+}
+
+
+.observer_two {
+    transform: translateX(-50px);
+    opacity: 0;
+    transition: 1000ms;
+
+}
+
+.observer_two_show {
+    transform: translateX(0);
+    opacity: 1;
+
+
+}
+
+/* .overflowX {
+    overflow-x: hidden !important;
+
+} */
+
+
+
+
+/* <================================END OF SECOND PAGE =====================================================> */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:768px) {
+/* heading that we we fit all mobile devices */
+    .heading{
+        font-size: 1.8rem !important;
+        color: var(--darkBlue);
+      
+      }
+
+
+    header h2{
+        font-size: 1.4rem;
+    }
+    
+    main section .sectionContainer {
+        width: 100%;
+       
+    }
+
+    main section .sectionContainer .textContainer {
+       flex-direction: column;
+       font-size: 2rem;
+       text-align: center;
+
+    }
+    main section .sectionContainer .textContainer h2{
+        font-size: 2rem;
+        margin-bottom: 1em;
+    
+        
+    }
+    
+    main section .sectionContainer .textContainer p{
+        font-size: 1.2rem;
+    
+        
+    }
+
+
+    main section .sectionContainer .textContainer button{
+        font-size: 1.3rem;
+        width: 100%;
+    }
+
+    .section_three .divContainer {
+        flex-direction: column;
+    }
+
+    .section_three .divContainer h2 {
+        font-size: 1.6rem !important;
+    
+    }
+    
+    .section_three .divContainer ul,p{
+        font-size: 1.1rem;
+        color: var(--darkBlue);
+    }
+    
+    .section_four .divContainer{
+        /* margin-top: 5em; */
+        width: 100%;
+        
+    }
+
+    footer p {
+        font-size: 1rem;
+
+    }
+
+    footer span {
+        font-size: 1rem;
+    
+    }
+
+    .tableContainer {
+        width: 100%;
+        margin: auto;
+    
+    }
+    
+    /* .tableContainer table{
+        width: 100%;
+       border: none;
+    } */
+
+    .tableContainer h3 {
+        font-size: 1.5625rem;
+
+    }
+    
+    .tableContainer td{
+        padding: 0.4em;
+    }
+
+    
+}
+
+
+
+@media screen and (max-width:289px){
+    header h2{
+        font-size: 1rem;
+    }
+    
+}
