@@ -193,13 +193,11 @@ main section .sectionContainer .textContainer .svg{
     width: 8rem;
     height: 8rem;
     border-radius: 50%;
+    padding: 0.5em;
     border: 1px dashed var(--darkBlue);
-    outline: 2px solid var(--darkBlue);
-    outline-offset: 10px;
-    outline-style: dashed;
-    box-shadow: 1px 1px 6px black;
-    -webkit-box-shadow: 1px 1px 6px black;
-    -moz-box-shadow: 1px 1px 6px black;
+    box-shadow: 1px 1px 5px black;
+    -webkit-box-shadow: 1px 1px 5px black;
+    -moz-box-shadow: 1px 1px 5px black;
 
 
 }
